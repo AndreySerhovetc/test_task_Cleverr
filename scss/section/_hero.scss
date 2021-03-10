@@ -1,0 +1,70 @@
+.hero {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    &-left {
+        &__title {
+            font-size: 60px;
+            line-height: 75px;
+            font-weight: 600;
+            color: #242f51;
+            margin: 0;
+            padding: 40px 0;
+        }
+        &__text {
+            font-family: Poppins;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 400;
+            color: #616368;
+            margin: 0;
+            padding-bottom: 40px;
+        }
+        &__choice {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 362px;
+            height: 35px;
+            background-color: #e2eaed;
+            border-radius: 17.5px;
+            &--title {
+                margin: 0;
+                position: absolute;
+                top: 5px;
+                left: 50px;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 400;
+                color: $color-logo-text;
+            }
+            & span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 39px;
+                height: 35px;
+                background-color: #feaa25;
+                border-radius: 17.5px;
+            }
+            &--img {
+                position: absolute;
+                z-index: 1;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.video-link {
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: 400;
+    color: $accent-color-blue;
+    margin-left: 20px;
+}

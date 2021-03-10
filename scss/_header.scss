@@ -1,0 +1,49 @@
+.bg {
+    background-image: url(/img/bgimage.jpg);
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: center;
+    height: 1000px;
+}
+
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 90px;
+    }
+    &__nav {
+        display: flex;
+    }
+}
+
+.logo {
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 700;
+    color: $accent-color;
+    &__name {
+        color: $color-logo-text;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 50px;
+        }
+    }
+    &__link {
+        color: $color-logo-text;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 44px;
+        font-weight: 400;
+    }
+}
