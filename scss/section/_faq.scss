@@ -13,6 +13,9 @@
                 line-height: 26px;
                 font-weight: 400;
                 color: $accordion-text-color;
+                @media(max-width: 769px) {
+                    font-size: 14px;
+                }
             }
         }
         &-header {
@@ -24,6 +27,9 @@
             align-items: center;
             position: relative;
             cursor: pointer;
+            @media(max-width: 769px) {
+                font-size: 16px;
+            }
             &::after {
                 content: "\002B";
                 position: absolute;
@@ -32,14 +38,15 @@
                 line-height: 58px;
                 font-weight: 400;
                 color: $color-logo-text;
+                @media(max-width: 769px) {
+                    font-size: 30px;
+                    line-height: 46px;
+                }
             }
-            & .active::after {
+            &,
+            .active::after {
                 content: "\002D";
             }
         }
     }
-}
-
-.accordion__item-header .active::after {
-    content: '\2212';
 }
