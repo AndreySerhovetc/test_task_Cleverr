@@ -80,7 +80,7 @@ p {
 
 @media (max-width: 1041px) {
   .bg {
-    height: auto;
+    height: 600px;
   }
 }
 
