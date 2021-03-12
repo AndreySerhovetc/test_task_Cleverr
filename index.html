@@ -5,158 +5,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+
     <title>AppLab</title>
 </head>
 
 <body>
     <div class="bg">
-        <header class="header__container container">
-            <div class="logo">
-                <a href="index.html" class="logo__link">
-                    <p class="logo">App<span class="logo__name">Lab</span></p>
-                </a>
+        <header class="header">
+            <div class="container header__container">
+                <a href="index.html" class="logo logo__link">
+                        App<span class="logo__name">Lab</span></p>
+                    </a>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item ">
+                            <a class="nav__link" href="/">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Key Features</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Testiminial</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn--primary header__btn">Try for free</button>
+                </nav>
+                <!-- burger-menu start -->
+
+                <div class="burger-menu__container">
+                    <div class="burger-menu__button-wrap">
+                        <div class="burger-menu__button">
+                            <span class="burger-menu__line"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="burger-menu">
+                    <ul class="burger-menu__list">
+                        <li class="burger-menu__item">
+                            <a href="/" class="burger-menu__link">
+                                <span class="burger-menu__item-name">Home</span>
+                            </a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#" class="burger-menu__link">
+                                <span class="burger-menu__item-name">Key Features</span>
+                            </a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#" class="burger-menu__link">
+                                <span class="burger-menu__item-name">Pricing</span>
+                            </a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#" class="burger-menu__link">
+                                <span class="burger-menu__item-name">Testiminial</span>
+                            </a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="#" class="burger-menu__link">
+                                <span class="burger-menu__item-name">FAQ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- burger-menu end -->
             </div>
-            <nav class="header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item ">
-                        <a href="/" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="gallery.html" class="nav__link">Key Features</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="project.html" class="nav__link">Pricing</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="certificate.html" class="nav__link">Testiminial</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">FAQ</a>
-                    </li>
-                </ul>
-                <button class="btn btn--primary btn--primary__header">Try for free</button>
-            </nav>
+
         </header>
-        <section class="hero__container sm-container">
-            <div class="hero-left">
-                <div class="hero-left__rewards">
-                    <img class="hero-left__rewards--img" src="img/select.png" alt="select">
-                    <span></span>
-                    <p class="hero-left__rewards--title">#1 Editiors Choice App of 2020</p>
-                </div>
+        <section class="hero">
+            <div class="sm-container hero__container">
+                <div class="hero-left">
+                    <div class="rewards">
+                        <img class="rewards__img" src="img/select.png" alt="select">
+                        <span></span>
+                        <strong class="rewards__title">#1 Editiors Choice App of 2020</strong>
+                    </div>
 
-                <h1 class="hero-left__title">Best app for your <br/>modern lifestyle</h1>
-                <p class="hero-left__text">Increase productivity with a simple to-do app. app for<br/> managing your personal budgets.</p>
-                <div class="hero-left__button">
-                    <button class="btn btn--primary">Try for free</button>
-                    <a class="video-link" href="">Watch demo video</a>
-                </div>
+                    <h1 class="hero-left__title">Best app for your <br/>modern lifestyle</h1>
+                    <p class="hero-left__text">Increase productivity with a simple to-do app. app for<br/> managing your personal budgets.</p>
+                    <div class="hero-left__action">
+                        <button class="btn btn--primary hero-left__button">Try for free</button>
+                        <a class="hero-left__link" href="">Watch demo video</a>
+                    </div>
 
+                </div>
+                <div class="hero-right">
+                    <img class="hero-right__img" src="img/phone.png" alt="phone">
+                </div>
             </div>
-            <div class="hero-right">
-                <img class="hero-right__img" src="img/phone.png" alt="phone">
-            </div>
+
         </section>
     </div>
-    <section class="advanced__container sm-container">
-        <div class="section__info">
-            <h2 class="section__info-title">Why you should choose <br/> our app</h2>
-            <p class="section__info-text">
-                The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
-            </p>
-        </div>
-        <div class="advanced__single-wrap">
-            <div class="advanced__single">
-                <img class="advanced__single-icon" src="img/web-design.png" alt="advased">
-                <h3 class="advanced__single-title">App Development</h3>
-                <p class="advanced__single-text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+    <section class="advanced-section">
+        <div class="sm-container advanced__container">
+            <div class="section-info">
+                <h2 class="section-info__title">Why you should choose <br/> our app</h2>
+                <p class="section-info__text">
+                    The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
+                </p>
             </div>
-            <div class="advanced__single">
-                <img class="advanced__single-icon" src="img/trophy.png" alt="advased">
-                <h3 class="advanced__single-title">10 Times Award</h3>
-                <p class="advanced__single-text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-            </div>
-            <div class="advanced__single">
-                <img class="advanced__single-icon" src="img/computer.png" alt="advased">
-                <h3 class="advanced__single-title">Cloud Storage</h3>
-                <p class="advanced__single-text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-            </div>
-            <div class="advanced__single">
-                <img class="advanced__single-icon" src="img/customer-support.png" alt="advased">
-                <h3 class="advanced__single-title">Customization</h3>
-                <p class="advanced__single-text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-            </div>
-            <div class="advanced__single">
-                <img class="advanced__single-icon" src="img/ui.png" alt="advased">
-                <h3 class="advanced__single-title">UX Planning</h3>
-                <p class="advanced__single-text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-            </div>
-            <div class="advanced__single">
-                <img class="advanced__single-icon" src="img/customer-service.png" alt="advased">
-                <h3 class="advanced__single-title">Customer Support</h3>
-                <p class="advanced__single-text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
-            </div>
-        </div>
-    </section>
-    <section class="faq__container sm-container">
-        <div class="section__info">
-            <h2 class="section__info-title">Frequently asked questions</h2>
-            <p class="section__info-text">
-                The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
-            </p>
-        </div>
-        <div class="accordion">
-            <div class="accordion__item">
-                <div class="accordion__item-header">How to contact with riders emergency?</div>
-                <div class="accordion__item-body">
-                    <div class="accordion__item-body--content">
-                        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
-                        innovation via workplace diversity and empowerment.
-                    </div>
+            <div class="advanced">
+                <div class="advanced-single">
+                    <img class="advanced-single__icon" src="img/web-design.png" alt="advased">
+                    <h3 class="advanced-single__title">App Development</h3>
+                    <p class="advanced-single__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                 </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__item-header">App installation failed, how to update system information?</div>
-                <div class="accordion__item-body">
-                    <div class="accordion__item-body--content">
-                        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
-                        innovation via workplace diversity and empowerment.
-                    </div>
+                <div class="advanced-single">
+                    <img class="advanced-single__icon" src="img/trophy.png" alt="advased">
+                    <h3 class="advanced-single__title">10 Times Award</h3>
+                    <p class="advanced-single__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                 </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__item-header">Website reponse taking time, how to improve?</div>
-                <div class="accordion__item-body">
-                    <div class="accordion__item-body--content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio modi placeat quia, sint maxime eveniet veniam molestias tempore cum sunt, voluptatem autem dolor voluptate est illo! Temporibus dicta tempore inventore earum atque delectus alias voluptate
-                        eum! Excepturi vel blanditiis, eligendi aspernatur voluptatem totam temporibus, iusto, harum earum culpa illum quis.
-                    </div>
+                <div class="advanced-single">
+                    <img class="advanced__single__icon" src="img/computer.png" alt="advased">
+                    <h3 class="advanced-single__title">Cloud Storage</h3>
+                    <p class="advanced-single__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                 </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__item-header">New update fixed all bug and issues?</div>
-                <div class="accordion__item-body">
-                    <div class="accordion__item-body--content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repudiandae? Dolorum atque aperiam praesentium aliquid, eos quos enim recusandae in?
-                    </div>
+                <div class="advanced-single">
+                    <img class="advanced-single__icon" src="img/customer-support.png" alt="advased">
+                    <h3 class="advanced-single__title">Customization</h3>
+                    <p class="advanced-single__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                 </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__item-header">How to contact with riders emergency?</div>
-                <div class="accordion__item-body">
-                    <div class="accordion__item-body--content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quibusdam iure maxime autem ducimus soluta odio perspiciatis exercitationem quaerat adipisci quod culpa vitae fugit sunt dignissimos sint, ipsam tempore reprehenderit repellat nam porro amet
-                        eveniet quia. Deleniti quos in qui!
-                    </div>
+                <div class="advanced-single">
+                    <img class="advanced-single__icon" src="img/ui.png" alt="advased">
+                    <h3 class="advanced-single__title">UX Planning</h3>
+                    <p class="advanced-single__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
+                </div>
+                <div class="advanced-single">
+                    <img class="advanced-single__icon" src="img/customer-service.png" alt="advased">
+                    <h3 class="advanced-single__title">Customer Support</h3>
+                    <p class="advanced-single__text">Get your blood tests delivered at home collect a sample from the news your blood tests.</p>
                 </div>
             </div>
         </div>
     </section>
+    <section class="faq-section">
+        <div class="sm-container faq__container">
+            <div class="section-info">
+                <h2 class="section-info__title">Frequently asked questions</h2>
+                <p class="section-info__text">
+                    The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
+                </p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item__header">How to contact with riders emergency?</div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body__content">
+                            Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
+                            innovation via workplace diversity and empowerment.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__header">App installation failed, how to update system information?</div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body__content">
+                            Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
+                            innovation via workplace diversity and empowerment.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__header">Website reponse taking time, how to improve?</div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body__content">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio modi placeat quia, sint maxime eveniet veniam molestias tempore cum sunt, voluptatem autem dolor voluptate est illo! Temporibus dicta tempore inventore earum atque delectus alias voluptate
+                            eum! Excepturi vel blanditiis, eligendi aspernatur voluptatem totam temporibus, iusto, harum earum culpa illum quis.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__header">New update fixed all bug and issues?</div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body__content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repudiandae? Dolorum atque aperiam praesentium aliquid, eos quos enim recusandae in?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item__header">How to contact with riders emergency?</div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body__content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quibusdam iure maxime autem ducimus soluta odio perspiciatis exercitationem quaerat adipisci quod culpa vitae fugit sunt dignissimos sint, ipsam tempore reprehenderit repellat nam porro amet
+                            eveniet quia. Deleniti quos in qui!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
